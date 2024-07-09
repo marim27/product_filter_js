@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Product Filter</title>
+</head>
+<body>
+    <nav class="product_navbar">
+        <button id="clearFilters" class="clear_btn">Clear Filters</button>
+        <div class="heading">Products Filter</div>
+    </nav>
+    <main>
+        <div class="parent">
+            <aside class="parent_sidebar">
+                <h2>Filters</h2>
+                <div class="filters">
+                    <div class="filters_div">
+                        <label for="sortOption" class="filters_label">Sort By:</label>
+                        <select id="sortOption" class="filters_input_select filters_select">
+                            <option value="">Popularity</option>
+                            <option value="price-asc">Lowest price</option>
+                            <option value="price-desc">Highest price</option>
+                            <option value="name-asc">A to Z</option>
+                            <option value="name-desc">Z to A</option>
+                        </select>
+                    </div>
+                    <div class="filters_div">
+                        <label for="category" class="filters_label">Categories:</label>
+                        <select id="category" class="filters_select filters_input_select">
+                            <option value="">All</option>
+                        </select>
+                    </div>
+                    <div class="filters_div">
+                        <label for="brand" class="filters_label">Brands:</label>
+                        <select id="brand" class="filters_select filters_input_select">
+                            <option value="">All</option>
+                        </select>
+                    </div>
+                    <div class="filters_div">
+                        <label for="minPrice" class="filters_label">Min price :</label>
+                        <input type="number" id="minPrice" class="filters_input filters_input_select">
+                    </div>
+                    <div class="filters_div">
+                        <label for="maxPrice" class="filters_label">Max price :</label>
+                        <input type="number" id="maxPrice" class="filters_input filters_input_select">
+                    </div>
+                </div>
+            </aside>
+            <div class="product_side">
+                <div id="productList" class="product_list">
+                    <p>No results found</p>
+                </div>
+            </div>
+        </div>
+    </main>
+    <script src="./script.js"></script>
+</body>
+</html>
